@@ -1,7 +1,10 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
+import { LoggerModule } from 'ewancoder-angular-logger';
 import { DialogService } from './dialog.service';
 
-@NgModule({})
+@NgModule({
+    imports: [ LoggerModule.forRoot() ]
+})
 export class DialogModule {
     static forRoot(): ModuleWithProviders {
         return {

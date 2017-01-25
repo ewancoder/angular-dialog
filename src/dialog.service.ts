@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
+import { LoggerService } from 'ewancoder-angular-logger';
 
 @Injectable()
 export class DialogService {
@@ -18,10 +19,12 @@ export class DialogService {
         return this.message.asObservable();
     }
 
-    constructor() {
+    constructor(logger: LoggerService) {
         this.shown = new BehaviorSubject<boolean>(false);
         this.message = new BehaviorSubject<string>('');
         this.currentMessage = '';
+
+        logger.log('DialogService initialized.', ['dialog', 'service', 'init']);
     }
 
     show(message: string): Promise<boolean> {
