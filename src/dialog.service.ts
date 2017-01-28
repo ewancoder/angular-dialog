@@ -24,7 +24,7 @@ export class DialogService {
         this.message = new BehaviorSubject<string>('');
         this.currentMessage = '';
 
-        logger.log('DialogService initialized.', ['dialog', 'service', 'init']);
+        logger.log('Initialized DialogService.', ['dialog', 'service', 'init']);
     }
 
     show(message: string): Promise<boolean> {
