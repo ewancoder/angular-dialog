@@ -1,6 +1,6 @@
 {
   "name": "@ewancoder/angular-dialog",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "description": "Angular dialog.",
   "license": "MIT",
   "main": "index.js",
@@ -12,19 +12,22 @@
     "type": "git",
     "url": "git+https://github.com/ewancoder/angular-dialog"
   },
-  "keywords": ["Angular", "Dialog"],
+  "keywords": [
+    "Angular",
+    "Dialog"
+  ],
   "author": "ewancoder@gmail.com",
   "bugs": {
     "url": "https://github.com/ewancoder/angular-dialog"
   },
   "homepage": "https://github.com/ewancoder/angular-dialog#readme",
   "dependencies": {
-    "@angular/core": "~4.1.3",
-    "rxjs": "~5.4.0",
-    "@ewancoder/angular-logger": "~0.5.1",
-    "zone.js": "~0.8.10"
+    "@angular/core": "~4.2.3",
+    "rxjs": "~5.4.1",
+    "@ewancoder/angular-logger": "~0.7.0",
+    "zone.js": "~0.8.12"
   },
   "devDependencies": {
-    "typescript": "~2.3.2"
+    "typescript": "~2.3.4"
   }
 }
